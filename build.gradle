@@ -1,0 +1,21 @@
+plugins {
+  id 'java'
+  id 'com.github.johnrengelman.shadow' version '7.0.0'
+}
+
+repositories {
+  // Dependencies for Minestom
+  mavenCentral()
+  maven { url 'https://repo.spongepowered.org/maven' }
+  maven { url 'https://jitpack.io' }
+}
+
+dependencies {
+  // Minestom API
+  compileOnly 'com.github.Minestom:Minestom:-SNAPSHOT'
+}
+
+java {
+  sourceCompatibility = JavaVersion.VERSION_11
+  targetCompatibility = JavaVersion.VERSION_11
+}
