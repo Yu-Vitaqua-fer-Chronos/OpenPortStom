@@ -13,6 +13,9 @@ repositories {
 dependencies {
   // Minestom API
   compileOnly 'com.github.Minestom:Minestom:-SNAPSHOT'
+
+  // Other deps
+  implementation 'com.github.bitletorg:weupnp:weupnp-0.1.4'
 }
 
 java {

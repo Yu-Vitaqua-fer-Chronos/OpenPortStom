@@ -1,2 +1,7 @@
-# Minestom-Example-Extension
-An example extension for Minestom in Java because ~ew kotlin~ I wasn't able to find a template for an example extension, feel free to modify this as much as you want!
+# OpenPortStom
+A project that uses [weupnp](https://github.com/bitletorg/weupnp) to forward the port for you when starting your server, it will also attempt to close the port.
+
+Yes this is a stupid name, I don't care.
+
+
+NOTE: This won't work for all routers.
