@@ -41,12 +41,12 @@ public class OpenPortStom extends Extension {
             return;
         }
 
-        logger.info("Attempting to map port {0}", port);
+        logger.info(String.format("Attempting to map port %d", port));
         PortMappingEntry portMapping = new PortMappingEntry();
 
-        logger.info("Querying device to see if mapping for port {0} already exists", port);
+        logger.info(String.format("Querying device to see if mapping for port %d already exists", port));
         try {
-            if (!d.getSpecificPortMappingEntry(port,"TCP",portMapping)) {
+            if (d.getSpecificPortMappingEntry(port,"TCP",portMapping)) {
                 logger.info("Port is already mapped.");
             } else {
                 logger.info("Sending port mapping request");
